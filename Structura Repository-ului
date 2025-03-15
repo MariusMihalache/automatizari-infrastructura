@@ -1,0 +1,29 @@
+automatizari-infrastructura/
+├── ansible/
+│   ├── playbooks/
+│   │   ├── install_apache.yml
+│   │   ├── configure_firewall.yml
+│   │   └── deploy_web_server.yml
+│   ├── inventories/
+│   │   ├── production_inventory.ini
+│   │   └── staging_inventory.ini
+│   └── ansible.cfg
+├── puppet/
+│   ├── manifests/
+│   │   ├── apache.pp
+│   │   ├── firewall.pp
+│   │   └── web_server.pp
+│   ├── modules/
+│   │   └── apache/
+│   └── puppet.conf
+├── chef/
+│   ├── cookbooks/
+│   │   └── apache/
+│   │       ├── recipes/
+│   │       │   ├── default.rb
+│   │       └── attributes/
+│   │           ├── default.rb
+│   ├── roles/
+│   │   └── web_server.rb
+│   └── chef-config.rb
+└── README.md
