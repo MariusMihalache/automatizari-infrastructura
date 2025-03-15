@@ -1,0 +1,10 @@
+---
+- name: Configurare firewall
+  hosts: all
+  become: yes
+  tasks:
+    - name: Permite portul 80
+      ufw:
+        rule: allow
+        name: 'Apache'
+        state: enabled
