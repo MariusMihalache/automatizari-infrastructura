@@ -1,0 +1,9 @@
+---
+- name: Instalare Apache pe Ubuntu
+  hosts: all
+  become: yes
+  tasks:
+    - name: Instalează Apache
+      apt:
+        name: apache2
+        state: present
